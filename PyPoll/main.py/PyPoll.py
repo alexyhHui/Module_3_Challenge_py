@@ -2,7 +2,7 @@ import os
 import csv
 
 # Define the path to the CSV file
-csvpath = os.path.join('D:\\UoB Data Bootcamp\\Assignment\\Module 3 Challenge\\Starter_Code\\PyPoll\\Resources\\election_data.csv')
+csvpath = os.path.join('..', 'Resources', 'election_data.csv')
 
 # Initialize variables to store data
 total_votes = 0
