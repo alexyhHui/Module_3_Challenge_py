@@ -1,8 +1,8 @@
 import os
 import csv
 
-# Define the path to the CSV file
-csvpath = os.path.join('..', 'Resources', 'election_data.csv')
+# Path to collect data from the Resources folder
+csvpath = os.path.join('D:\\UoB Data Bootcamp\\Assignment\\Module 3 Challenge\\Starter_Code\\PyPoll\\Resources\\election_data.csv')
 
 # Initialize variables to store data
 total_votes = 0
@@ -10,13 +10,16 @@ candidates = {}
 winner = ""
 max_votes = 0
 
-# Read and analyze the CSV file
+# Read in the CSV file
 with open(csvpath,'r') as csvfile:
 
+    # Split the data on commas
     csvreader = csv.reader(csvfile, delimiter=',')
 
+    # Skip the header row
     header = next(csvreader)
 
+    # Loop through the data
     for row in csvreader:
         total_votes += 1
         candidate = row[2]
