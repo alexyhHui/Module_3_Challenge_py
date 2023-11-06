@@ -1,20 +1,26 @@
 import os
 import csv
 
-csvpath = os.path.join('..', 'Resources', 'budget_data.csv')
+# Path to collect data from the Resources folder
+csvpath = os.path.join('D:\\UoB Data Bootcamp\\Assignment\\Module 3 Challenge\\Starter_Code\\PyBank\\Resources\\budget_data.csv')
 
+# Initialize variables to store data
 total_months = 0
 net_total = 0
 previous_profit = 0
 Profit_changes = []
 dates = []
 
+# Read in the CSV file
 with open(csvpath,'r') as csvfile:
 
+    # Split the data on commas
     csvreader = csv.reader(csvfile, delimiter=',')
 
+    # Skip the header row
     header = next(csvreader)
 
+    # Loop through the data
     for row in csvreader:
         date = row[0]
         profit = int(row[1])
