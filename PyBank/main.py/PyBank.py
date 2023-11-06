@@ -1,7 +1,7 @@
 import os
 import csv
 
-csvpath = os.path.join('D:\\UoB Data Bootcamp\\Assignment\\Module 3 Challenge\\Starter_Code\\PyBank\\Resources\\budget_data.csv')
+csvpath = os.path.join('..', 'Resources', 'budget_data.csv')
 
 total_months = 0
 net_total = 0
