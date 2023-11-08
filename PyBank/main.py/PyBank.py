@@ -2,7 +2,7 @@ import os
 import csv
 
 # Path to collect data from the Resources folder
-csvpath = os.path.join('D:\\UoB Data Bootcamp\\Assignment\\Module 3 Challenge\\Starter_Code\\PyBank\\Resources\\budget_data.csv')
+csvpath = os.path.join('..','Resources','budget_data.csv')
 
 # Initialize variables to store data
 total_months = 0
